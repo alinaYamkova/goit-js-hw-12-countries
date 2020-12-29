@@ -1,0 +1,28 @@
+  <div class="card-img">
+    <img src="{{flag}}" alt="flag" width='420'>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">{{name}}</h2>
+    <ul>
+    {{#each this}} 
+      <li>
+        <h3>Capital: 
+          <span class="card-text">{{capital}}</span>
+        </h3>
+      </li>
+      <li>
+        <h3>Population: 
+          <span class="card-text">{{population}}</span>
+        </h3>
+      </li>
+      <li>
+        <h3 class="card-title">Languages: </h3>
+        <ul>
+        {{#each languages}}
+          <li>{{this.name}}</li>
+        {{/each}}
+        </ul>
+      </li>
+    {{/each}}
+    </ul>
+  </div>

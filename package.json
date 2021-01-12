@@ -42,8 +42,7 @@
     "start": "webpack-dev-server --env.mode development",
     "build": "webpack --env.mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "clean": "gh-pages-clean"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
